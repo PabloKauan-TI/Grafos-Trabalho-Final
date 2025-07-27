@@ -30,7 +30,9 @@ O projeto segue os seguintes passos:
 |
 ├── 📂 Código e Exemplos/
 │   ├── grafo_29v.txt           # Matriz de adjacência para grafo com 29 vértices
+│   ├── saida_grafo_29v.txt     # Saída correspondente para o grafo de 29 vértices
 │   ├── grafo_175v.txt          # Matriz de adjacência para grafo com 175 vértices
+│   ├── saida_grafo_175v.txt    # Saída correspondente para o grafo de 175 vértices
 │   └── codigo.py               # Implementação do algoritmo de Christofides
 ```
 
