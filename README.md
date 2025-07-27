@@ -27,7 +27,7 @@ O projeto segue os seguintes passos:
 📂 Grafos - Trabalho Final/
 ├── 📂 Documentação/
 │   └── Relatório.pdf           # Tudo referente ao trabalho
-|   └── Readme.md               # Presente Documento
+|
 ├── 📂 Código e Exemplos/
 │   ├── grafo_29v.txt           # Matriz de adjacência para grafo com 29 vértices
 │   ├── grafo_175v.txt          # Matriz de adjacência para grafo com 175 vértices
