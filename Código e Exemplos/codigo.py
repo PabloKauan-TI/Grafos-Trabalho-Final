@@ -247,7 +247,18 @@ if __name__ == "__main__":
     filename = sys.argv[1]
     
     # Passo 1: Ler o grafo do arquivo
-    n, graph_matrix = read_graph(filename)
+    #verifica confirmidades no arquivo passado, se ele existe, se é do formato esperdo, etc.
+    try:
+       n, graph_matrix = read_graph(filename)
+    except FileNotFoundError:
+       print(f"[Erro] Arquivo '{filename}' não encontrado.\n")
+       sys.exit(1)
+    except ValueError as e:
+        print(f"[Erro] Erro ao interpretar o conteúdo do arquivo: \n {e}")
+        sys.exit(1)
+    except Exception as e:
+       print(f"[Erro inesperado] \n{e}\n")
+       sys.exit(1)
 
     # Passo 2: Calcular a Árvore Geradora Mínima (MST)
     mst_edges, mst_weight = prim_mst(n, graph_matrix)
